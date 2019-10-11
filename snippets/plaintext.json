@@ -1,0 +1,17 @@
+{
+  "eslint ignore": {
+    "prefix": "eslintignore",
+    "description": "ESLint ignore file",
+    "body": ["node_modules", "$0"]
+  },
+  "npm config file": {
+    "prefix": "npmrc",
+    "description": "The npm configuration file",
+    "body": [
+      "package-lock = false",
+      "progress = false",
+      "save-exact = true",
+      "$0"
+    ]
+  }
+}

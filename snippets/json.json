@@ -1,0 +1,59 @@
+{
+  "ESLint": {
+    "prefix": "eslintrc",
+    "description": "ESLint file",
+    "body": [
+      "{",
+      "\t\"extends\": [\"plugin:prettier/recommended\"],",
+      "\t\"env\": {",
+      "\t\t\"es6\": true",
+      "\t}",
+      "}",
+      "$0"
+    ]
+  },
+  "package.json": {
+    "prefix": "package",
+    "description": "package.json file",
+    "body": [
+      "{",
+      "\t\"name\": \"${1:project-name}\",",
+      "\t\"version\": \"${2:1.0.0}\",",
+      "\t\"description\": \"${1:project-name} is an awesome project.\",",
+      "\t\"author\": \"${3:author-name} <${4:email}>\",",
+      "\t\"homepage\": \"https://github.com/${5:github-username}/${1:project-name}#readme\",",
+      "\t\"keywords\": [",
+      "\t\t\"${6:keyword}\"",
+      "\t],",
+      "\t\"main\": \"${7:index.js}\",",
+      "\t\"scripts\": {",
+      "\t\t\"start\": \"${8:start}\",",
+      "\t\t\"test\": \"${9:test}\"",
+      "\t},",
+      "\t\"repository\": {",
+      "\t\t\"type\": \"git\",",
+      "\t\t\"url\": \"https://github.com/${5:github-username}/${1:project-name}.git\"",
+      "\t},",
+      "\t\"bugs\": {",
+      "\t\t\"url\": \"https://github.com/${5:github-username}/${1:project-name}/issues\"",
+      "\t},",
+      "\t\"dependencies\": {},",
+      "\t\"devDependencies\": {},",
+      "\t\"private\": true,",
+      "\t\"license\": \"${10:MIT}\"",
+      "}",
+      "$0"
+    ]
+  },
+  "PRETTIER": {
+    "prefix": "prettier",
+    "description": "Prettier file",
+    "body": [
+      "{",
+      "\t\"arrowParens\": \"always\",",
+      "\t\"singleQuote\": true",
+      "}",
+      "$0"
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "shebang_symbol": {
+    "prefix": ["#!", "shebang"],
+    "body": ["#!/usr/bin/env python", ""]
+  },
+  "codeauthor": {
+    "prefix": ["author", "codeauthor"],
+    "body": [".. codeauthor:: Tsuyoshi Hombashi <tsuyoshi.hombashi@gmail.com>"]
+  },
+  "header": {
+    "prefix": "header",
+    "body": [
+      "# encoding: utf-8",
+      "",
+      "from __future__ import absolute_import, division, print_function, unicode_literals",
+      "",
+      "import sys",
+      "",
+      ""
+    ],
+    "description": "Header template for a Python script."
+  },
+  "class": {
+    "prefix": "class init",
+    "body": [
+      "class ${class_name}(object):",
+      "",
+      "    def __init__(self):",
+      "        pass",
+      ""
+    ],
+    "description": "Class template"
+  },
+  "property: getter": {
+    "prefix": "property",
+    "body": ["@property", "def ${name}(self):", "    return self.__${name}"],
+    "description": "getter template for a Python class."
+  },
+  "property: setter": {
+    "prefix": "setter",
+    "body": [
+      "@${name}.setter",
+      "def ${name}(self, x):",
+      "    self.__${name} = x"
+    ],
+    "description": "setter template for a Python class."
+  },
+  "collections.namedtuple": {
+    "prefix": "namedtuple",
+    "body": [
+      "${tuple_name} = namedtuple('${tuple_name}', '${attr0} ${attr1}')"
+    ],
+    "description": "collections.namedtuple template."
+  },
+  "stderr": {
+    "prefix": "stderr",
+    "body": ["print(\"\", file=sys.stderr)"],
+    "description": "collections.namedtuple template."
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "def main():",
+      "    return 0",
+      "",
+      "",
+      "if __name__ == '__main__':",
+      "    sys.exit(main())",
+      ""
+    ],
+    "description": "Main function template for a Python script."
+  }
+}

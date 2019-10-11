@@ -1,0 +1,47 @@
+{
+  "CHANGELOG.md": {
+    "prefix": "CHANGELOG",
+    "description": "A CHANGELOG.md template",
+    "body": [
+      "# CHANGELOG",
+      "",
+      "## v1.1.0",
+      "* Add some feature",
+      "* Fix some bug",
+      "",
+      "## v1.0.0",
+      "",
+      "* Initial release",
+      "$0"
+    ]
+  },
+  "README.md": {
+    "prefix": "README",
+    "description": "A README.md template",
+    "body": [
+      "# Project Name",
+      "",
+      "> Short description",
+      "",
+      "![Preview](images/preview.gif)",
+      "",
+      "Long description",
+      "",
+      "## Installation",
+      "Installation instructions",
+      "",
+      "## Usage",
+      "Usage instructions",
+      "",
+      "## Development",
+      "Development instructions",
+      "",
+      "## Author",
+      "Author name",
+      "",
+      "## License",
+      "License name",
+      "$0"
+    ]
+  }
+}

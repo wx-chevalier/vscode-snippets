@@ -1,0 +1,63 @@
+{
+  "AppVeyor": {
+    "prefix": "ci-appveyor",
+    "description": "AppVeyor configuration file",
+    "body": [
+      "environment:",
+      "\tnodejs_version: \"8\"",
+      "",
+      "install:",
+      "\t- ps: Install-Product node $env:nodejs_version",
+      "\t- npm install",
+      "",
+      "test_script:",
+      "\t- node --version",
+      "\t- npm --version",
+      "\t- npm test",
+      "",
+      "build: off",
+      "$0"
+    ]
+  },
+  "Circle": {
+    "prefix": "ci-circle",
+    "description": "Circle configuration file",
+    "body": [
+      "version: 2",
+      "jobs:",
+      "\tbuild:",
+      "\t\tdocker:",
+      "\t\t\t- image: circleci/node:8",
+      "\t\tsteps:",
+      "\t\t\t- checkout",
+      "\t\t\t- run: npm install",
+      "\t\t\t- run: npm test",
+      "$0"
+    ]
+  },
+  "Travis": {
+    "prefix": "ci-travis",
+    "description": "Travis configuration file",
+    "body": [
+      "language: node_js",
+      "",
+      "node_js:",
+      "\t-\"8\"",
+      "",
+      "install:",
+      "\t- npm install",
+      "",
+      "script:",
+      "\t- npm test",
+      "",
+      "after_script:",
+      "\t- npm run coveralls",
+      "",
+      "notifications:",
+      "\temail:",
+      "\t\ton_success: never",
+      "\t\ton_failure: always",
+      "$0"
+    ]
+  }
+}

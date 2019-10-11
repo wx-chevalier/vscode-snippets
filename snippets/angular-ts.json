@@ -1,0 +1,193 @@
+{
+  "Import external module.": {
+    "prefix": "import statement",
+    "description": "Import external module.",
+    "body": ["import { $0 } from '${1:module}';"]
+  },
+  "Angular Class": {
+    "prefix": "ng-class",
+    "description": "Angular class",
+    "body": ["export class ${1:Name} {", "\t$0", "}", ""]
+  },
+  "Angular Component": {
+    "prefix": "ng-component",
+    "description": "Angular component",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\ttemplateUrl: '${1:name}.component.html'",
+      "})",
+      "",
+      "export class ${2:Name}Component implements OnInit {",
+      "",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}",
+      ""
+    ]
+  },
+  "Angular Component Input": {
+    "prefix": "ng-component-input",
+    "description": "Angular component with Input",
+    "body": [
+      "import { Component, Input } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component {",
+      "",
+      "\t@Input() ${4:input}: ${5:any};$0",
+      "",
+      "}",
+      ""
+    ]
+  },
+  "Angular Directive": {
+    "prefix": "ng-directive",
+    "description": "Angular directive",
+    "body": [
+      "import { Directive } from '@angular/core';",
+      "",
+      "@Directive({",
+      "\tselector: '${1:selector}'",
+      "})",
+      "export class ${2:Name}Directive {",
+      "",
+      "\tconstructor() { }",
+      "",
+      "}",
+      "$0"
+    ]
+  },
+  "Angular Enum": {
+    "prefix": "ng-enum",
+    "description": "Angular enum",
+    "body": ["export enum ${1:Name} {", "\t$0", "}", ""]
+  },
+  "Angular Guard": {
+    "prefix": "ng-guard",
+    "description": "Angular guard",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs/Observable';",
+      "",
+      "@Injectable()",
+      "export class ${1:Name}Guard implements CanActivate {",
+      "\tcanActivate(",
+      "\t\tnext: ActivatedRouteSnapshot,",
+      "\t\tstate: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {",
+      "\t\treturn true;$0",
+      "\t}",
+      "}",
+      ""
+    ]
+  },
+  "Angular Interface": {
+    "prefix": "ng-interface",
+    "description": "Angular Interface",
+    "body": ["export interface I${1:Name} {", "\t$0", "}", ""]
+  },
+  "Angular Module": {
+    "prefix": "ng-module",
+    "description": "Angular module",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "",
+      "@NgModule({",
+      "\timports: [],",
+      "\texports: [],",
+      "\tdeclarations: [],",
+      "\tproviders: []",
+      "})",
+      "export class ${1:Name}Module { }",
+      "$0"
+    ]
+  },
+  "Angular Pipe": {
+    "prefix": "ng-pipe",
+    "description": "Angular pipe",
+    "body": [
+      "import { Pipe, PipeTransform } from '@angular/core';",
+      "",
+      "@Pipe({",
+      "\tname: '${1:name}'",
+      "})",
+      "export class ${2:Name}Pipe implements PipeTransform {",
+      "",
+      "\ttransform(value: any, ...args: any[]): any {",
+      "\t\treturn null;",
+      "\t}",
+      "",
+      "}",
+      "$0"
+    ]
+  },
+  "Angular Service": {
+    "prefix": "ng-service",
+    "description": "Angular service",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "",
+      "@Injectable()",
+      "export class ${1:Name}Service {",
+      "",
+      "\tconstructor() { }",
+      "",
+      "}",
+      "$0"
+    ]
+  },
+  "RxJS Extensions": {
+    "prefix": "rx-extensions",
+    "description": "RxJS Extensions import",
+    "body": [
+      "import 'rxjs/add/observable/of';",
+      "import 'rxjs/add/observable/throw';",
+      "",
+      "import 'rxjs/add/operator/catch';",
+      "import 'rxjs/add/operator/do';",
+      "import 'rxjs/add/operator/map';",
+      "import 'rxjs/add/operator/switchMap';",
+      "$0"
+    ]
+  },
+  "RxJS Observable Import": {
+    "prefix": "rx-observable",
+    "description": "RxJS Observable import",
+    "body": ["import { Observable } from 'rxjs/Observable';", "$0"]
+  },
+  "RxJS Subject Import": {
+    "prefix": "rx-subject",
+    "description": "RxJS Subject import",
+    "body": ["import { Subject } from 'rxjs/Subject';", "$0"]
+  },
+  "RxJS BehaviorSubject Import": {
+    "prefix": "rx-subject-behavior",
+    "description": "RxJS BehaviorSubject import",
+    "body": ["import { BehaviorSubject } from 'rxjs/BehaviorSubject';", "$0"]
+  },
+  "RxJS ReplaySubject Import": {
+    "prefix": "rx-subject-replay",
+    "description": "RxJS ReplaySubject import",
+    "body": ["import { ReplaySubject } from 'rxjs/ReplaySubject';", "$0"]
+  },
+  "RxJS Add Observable Import": {
+    "prefix": "rx-add-observable",
+    "description": "RxJS Add Observable import",
+    "body": ["import 'rxjs/add/observable/${1:of}';", "$0"]
+  },
+  "RxJS Add Operator Import": {
+    "prefix": "rx-add-operator",
+    "description": "RxJS Add Operator import",
+    "body": ["import 'rxjs/add/operator/${1:map}';", "$0"]
+  }
+}

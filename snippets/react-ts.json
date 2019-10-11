@@ -1,0 +1,40 @@
+{
+  "tsrrcc": {
+    "prefix": "tsrrcc",
+    "body": [
+      "import * as React from 'react';",
+      "import { connect } from 'react-redux';",
+      "import { RouteComponentProps, withRouter } from 'react-router';",
+      "",
+      "import { UfcState } from '@/apps/shared/ducks';",
+      "",
+      "import * as styles from './index.less';",
+      "",
+      "export interface $0Props extends RouteComponentProps {}",
+      "",
+      "export interface $0State {}",
+      "",
+      "export default class $0Comp extends React.Component<",
+      "  $0Props,",
+      "  $0State",
+      "> {",
+      "  constructor(props: $0Props) {",
+      "    super(props);",
+      "",
+      "    this.state = {};",
+      "  }",
+      "",
+      "  public render() {",
+      "    return <div className={styles.container}></div>;",
+      "  }",
+      "}",
+      "",
+      "export const OperationDetail = connect(",
+      "  (state: UfcState) => ({}),",
+      "  {},",
+      ")(withRouter($0Comp));",
+      ""
+    ],
+    "description": ""
+  }
+}

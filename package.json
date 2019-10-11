@@ -1,0 +1,69 @@
+{
+  "name": "@wx-fc/vscode-snippets",
+  "version": "0.0.1",
+  "displayName": "VSCode Essentials Snippets",
+  "description": "A collection of essentials snippets for Visual Studio Code.",
+  "publisher": "wx-chevalier",
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#333333",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/wx-chevalier/@wx-fc/vscode-snippets/blob/master/README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wx-chevalier/@wx-fc/vscode-snippets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wx-chevalier/@wx-fc/vscode-snippets/issues"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "Snippet"
+  ],
+  "engines": {
+    "vscode": "^0.10.0"
+  },
+  "scripts": {
+    "build": "vsce package",
+    "publish": "vsce publish"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "html",
+        "path": "snippets/html.json"
+      },
+      {
+        "language": "json",
+        "path": "snippets/json.json"
+      },
+      {
+        "language": "markdown",
+        "path": "snippets/markdown.json"
+      },
+      {
+        "language": "plaintext",
+        "path": "snippets/plaintext.json"
+      },
+      {
+        "language": "properties",
+        "path": "snippets/properties.json"
+      },
+      {
+        "language": "typescript",
+        "path": "snippets/typescript.json"
+      },
+      {
+        "language": "yaml",
+        "path": "snippets/yaml.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "1.44.0"
+  },
+  "license": "SEE LICENSE IN LICENSE"
+}

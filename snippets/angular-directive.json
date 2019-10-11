@@ -1,0 +1,41 @@
+{
+  "ngFor": {
+    "prefix": "ng-ngFor",
+    "description": "Angular *ngFor",
+    "body": ["*ngFor=\"let ${1:item} of ${2:collection}\""]
+  },
+  "ngIf": {
+    "prefix": "ng-ngIf",
+    "description": "Angular *ngIf",
+    "body": ["*ngIf=\"${1:expression}\""]
+  },
+  "ngModel": {
+    "prefix": "ng-ngModel",
+    "description": "Angular ngModel",
+    "body": ["[(ngModel)]=\"${1:model}\""]
+  },
+  "ngRouterLink": {
+    "prefix": "ng-routerLink",
+    "description": "Angular routerLink",
+    "body": ["[routerLink]=\"['/${1:routePath}']\"$0"]
+  },
+  "ngRouterLinkWithParameter": {
+    "prefix": "ng-routerLink-param",
+    "description": "Angular routerLink with a route parameter",
+    "body": ["[routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\""]
+  },
+  "ngSelect": {
+    "prefix": "ng-select",
+    "description": "<select> control with ngModel",
+    "body": [
+      "<select [(ngModel)]=\"${1:model}\">",
+      "\t<option *ngFor=\"let ${2:item} of ${3:list}\" [value]=\"${2:item}\">{{${2:item}}}</option>",
+      "</select>"
+    ]
+  },
+  "pre with json": {
+    "prefix": "ng-pre",
+    "description": "Angular pre with json",
+    "body": ["<pre>{{${1:model} | json}}</pre>$0"]
+  }
+}

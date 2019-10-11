@@ -1,0 +1,81 @@
+{
+  "Editor Config": {
+    "prefix": "editorconfig",
+    "description": "Editor Config file",
+    "body": [
+      "# http://editorconfig.org",
+      "root = true",
+      "",
+      "[*]",
+      "charset = utf-8",
+      "end_of_line = lf",
+      "indent_size = 2",
+      "indent_style = space",
+      "insert_final_newline = true",
+      "trim_trailing_whitespace = true",
+      "",
+      "[*.md]",
+      "max_line_length = off",
+      "trim_trailing_whitespace = false",
+      "$0"
+    ]
+  },
+  "Git Attributes": {
+    "prefix": "gitattributes",
+    "description": ".gitattributes file",
+    "body": ["* text=auto eol=lf", "$0"]
+  },
+  "Git Attributes Archives": {
+    "prefix": "gitattributes-archives",
+    "description": "Set archives as binary",
+    "body": [
+      "# archives",
+      "*.7z binary",
+      "*.gz binary",
+      "*.rar binary",
+      "*.tar binary",
+      "*.zip binary",
+      "$0"
+    ]
+  },
+  "Git Attributes Documents": {
+    "prefix": "gitattributes-documents",
+    "description": "Set documents as binary",
+    "body": ["# documents", "*.pdf binary", "$0"]
+  },
+  "Git Attributes Executables": {
+    "prefix": "gitattributes-executables",
+    "description": "Set executables as binary",
+    "body": ["# executables", "*.exe binary", "$0"]
+  },
+  "Git Attributes Fonts": {
+    "prefix": "gitattributes-fonts",
+    "description": "Set fonts as binary",
+    "body": [
+      "# fonts",
+      "*.eot binary",
+      "*.otf binary",
+      "*.ttf binary",
+      "*.woff binary",
+      "*.woff2 binary",
+      "$0"
+    ]
+  },
+  "Git Attributes Graphics": {
+    "prefix": "gitattributes-graphics",
+    "description": "Set graphics as binary",
+    "body": [
+      "# graphics",
+      "*.bmp binary",
+      "*.gif binary",
+      "*.ico binary",
+      "*.jpeg binary",
+      "*.jpg binary",
+      "*.png binary",
+      "*.svg binary",
+      "*.tif binary",
+      "*.tiff binary",
+      "$0"
+    ]
+  }
+}
