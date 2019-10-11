@@ -14,7 +14,7 @@
       "",
       "export interface $0State {}",
       "",
-      "export default class $0Comp extends React.Component<",
+      "export class $0Comp extends React.Component<",
       "  $0Props,",
       "  $0State",
       "> {",
@@ -24,17 +24,17 @@
       "    this.state = {};",
       "  }",
       "",
-      "  public render() {",
+      "  render() {",
       "    return <div className={styles.container}></div>;",
       "  }",
       "}",
       "",
-      "export const OperationDetail = connect(",
+      "export const $0 = connect(",
       "  (state: UfcState) => ({}),",
       "  {},",
       ")(withRouter($0Comp));",
       ""
     ],
-    "description": ""
+    "description": "Class Component with Router & Redux"
   }
 }
