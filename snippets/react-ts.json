@@ -56,7 +56,7 @@
 			"  style,",
 			"}: $0Props) => {",
 			"  return (",
-			"    <div className={cn(className, styles.titleWrapper)} style={style}>",
+			"    <div className={cn(className, styles.container)} style={style}>",
 			"      $0",
 			"    </div>",
 			"  );",
