@@ -1,7 +1,7 @@
 {
-  "name": "@wx-fc/vscode-snippets",
-  "version": "0.0.1",
-  "displayName": "VSCode Essentials Snippets",
+  "name": "wx-fc-vscode-snippets",
+  "version": "0.0.3",
+  "displayName": "VSCode Daily Snippets & Tasks",
   "description": "A collection of essentials snippets for Visual Studio Code.",
   "publisher": "wx-chevalier",
   "icon": "images/logo.png",
@@ -18,10 +18,15 @@
     "url": "https://github.com/wx-chevalier/@wx-fc/vscode-snippets/issues"
   },
   "categories": [
-    "Snippets"
+    "Snippets",
+    "Formatters"
   ],
   "keywords": [
-    "Snippet"
+    "Snippet",
+    "Task"
+  ],
+  "activationEvents": [
+    "onCommand:workbench.action.tasks.runTask"
   ],
   "engines": {
     "vscode": "^0.10.0"
@@ -33,8 +38,16 @@
   "contributes": {
     "snippets": [
       {
-        "language": "html",
-        "path": "snippets/html.json"
+        "language": "typescript",
+        "path": "snippets/angular-directive.json"
+      },
+      {
+        "language": "shellscript",
+        "path": "snippets/bash.json"
+      },
+      {
+        "language": "go",
+        "path": "snippets/go.json"
       },
       {
         "language": "json",
@@ -54,16 +67,31 @@
       },
       {
         "language": "typescript",
-        "path": "snippets/typescript.json"
+        "path": "snippets/react-ts.json"
+      },
+      {
+        "language": "shellscript",
+        "path": "snippets/shellscript.json"
       },
       {
         "language": "yaml",
         "path": "snippets/yaml.json"
       }
+    ],
+    "taskDefinitions": [
+      {
+        "label": "Run google java format",
+        "type": "shell",
+        "command": "google-java-format --replace ${file}"
+      }
     ]
   },
   "devDependencies": {
-    "vsce": "1.44.0"
+    "vsce": "1.44.0",
+    "@types/node": "^8.0.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.5.1",
+    "@types/vscode": "^1.32.0"
   },
   "license": "SEE LICENSE IN LICENSE"
 }

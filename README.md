@@ -19,7 +19,7 @@ Snippets are generated with [snippet-generator](https://snippet-generator.app/).
 
 # Usage
 
-Type part of a snippet, press `enter` and the snippet unfolds. For snippets in markdown format you need to press `ctrl+space` (Windows / Linux) or `cmd+space` (OSX).
+Type part of a snippet, press `enter` and the snippet unfolnds. For snippets in markdown format you need to press `ctrl+space` (Windows / Linux) or `cmd+space` (OSX).
 
 ## Angular snippets
 
