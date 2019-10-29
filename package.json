@@ -1,6 +1,6 @@
 {
   "name": "wx-fc-vscode-snippets",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "displayName": "VSCode Daily Snippets & Tasks",
   "description": "A collection of essentials snippets for Visual Studio Code.",
   "publisher": "wx-chevalier",
@@ -24,9 +24,6 @@
   "keywords": [
     "Snippet",
     "Task"
-  ],
-  "activationEvents": [
-    "onCommand:workbench.action.tasks.runTask"
   ],
   "engines": {
     "vscode": "^0.10.0"
