@@ -1,4 +1,9 @@
 {
+  "IDL": {
+    "prefix": "IDL",
+    "description": "插入文档链接",
+    "body": "[$0-Series](https://github.com/wx-chevalier/$0-Series?q=)"
+  },
   "CHANGELOG.md": {
     "prefix": "CHANGELOG",
     "description": "A CHANGELOG.md template",

@@ -13,7 +13,7 @@ Snippets are generated with [snippet-generator](https://snippet-generator.app/).
 1. Install [Visual Studio Code](https://code.visualstudio.com/)
 2. Launch Visual Studio Code
 3. Choose **Extensions** from menu
-4. Search for `@wx-fc/vscode-snippets`
+4. Search for `@m-fe/vscode-snippets`
 5. Click **Install** to install it
 6. Click **Reload** to reload the Code
 
@@ -110,7 +110,7 @@ Type part of a snippet, press `enter` and the snippet unfolnds. For snippets in 
 Clone the repo
 
 ```bash
-$ git clone https://github.com/wx-chevalier/@wx-fc/vscode-snippets.git
+$ git clone https://github.com/wx-chevalier/dd-vscode-snippets.git
 ```
 
 Install vsce
@@ -134,7 +134,7 @@ Install the extension from a package file (.vsix)
 1. Launch Visual Studio Code
 2. Choose **Extensions** from menu
 3. Click **More** > **Install from VSIX...**
-4. Select the file `@wx-fc/vscode-snippets-x.x.x.vsix`
+4. Select the file `@m-fe/vscode-snippets-x.x.x.vsix`
 5. Click **Reload Now** to reload the Code
 
 ## Publish
@@ -169,7 +169,7 @@ For more detailed information about publish: [Publishing Extensions](https://cod
 
 ## License
 
-[MIT](https://github.com/wx-chevalier/@wx-fc/vscode-snippets/blob/master/LICENSE)
+[MIT](https://github.com/wx-chevalier/@m-fe/vscode-snippets/blob/master/LICENSE)
 
 ## Home & More | 延伸阅读
 
