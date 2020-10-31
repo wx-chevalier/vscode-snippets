@@ -1,6 +1,6 @@
 {
   "name": "dd-vscode-snippets",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "displayName": "VSCode Snippets & Tasks for Docs and Development",
   "description": "A collection of essentials snippets for Visual Studio Code.",
   "publisher": "wx-chevalier",

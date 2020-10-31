@@ -1,4 +1,34 @@
 {
+  "tsrcc": {
+    "prefix": "tsrcc",
+    "body": [
+      "import * as React from 'react';",
+      "import { connect } from 'react-redux';",
+      "",
+      "import './index.css'",
+      "",
+      "export interface $0Props {}",
+      "",
+      "export interface $0State {}",
+      "",
+      "export class $0Comp extends React.Component<",
+      "  $0Props,",
+      "  $0State",
+      "> {",
+      "  constructor(props: $0Props) {",
+      "    super(props);",
+      "",
+      "    this.state = {};",
+      "  }",
+      "",
+      "  render() {",
+      "    return <div className={styles.container}>$0</div>;",
+      "  }",
+      "}",
+      ""
+    ],
+    "description": "Simple Class Component"
+  },
   "tsrrcc": {
     "prefix": "tsrrcc",
     "body": [
