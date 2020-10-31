@@ -103,7 +103,7 @@
       "}",
       "",
       "@connect((_state: AppState) => ({}), {})",
-      "class $0 extends Component {",
+      "class $0 extends Component<IProps, IState> {",
       "  state: IState = { };",
       "",
       "  componentWillReceiveProps(nextProps) {",
