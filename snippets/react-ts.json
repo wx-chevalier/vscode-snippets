@@ -92,7 +92,7 @@
       "  );",
       "};"
     ],
-    "description": ""
+    "description": "React Functional Components"
   },
   "tsrtaro": {
     "prefix": "tsrtaro",
@@ -176,6 +176,6 @@
       "export default $0 as ComponentClass<IOwnProps, IState>;",
       ""
     ],
-    "description": "tsrtaro"
+    "description": "Taro Components in TypeScript"
   }
 }
