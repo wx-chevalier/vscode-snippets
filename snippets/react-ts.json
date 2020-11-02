@@ -22,7 +22,7 @@
       "  }",
       "",
       "  render() {",
-      "    return <div className={styles.container}>$0</div>;",
+      "    return <div className=\"\">$0</div>;",
       "  }",
       "}",
       ""
